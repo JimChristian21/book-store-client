@@ -8,14 +8,14 @@ const ManageBooks = () => {
 
   useEffect(() =>{
 
-    fetch('http://localhost:3000/books')
+    fetch('https://book-store-server-rspc.onrender.com/books')
       .then(res => res.json())
       .then(data => setAllBooks(data));
   }, []);
 
   const handleDelete = (id) => {
 
-    fetch(`http://localhost:3000/books/${id}`, {
+    fetch(`https://book-store-server-rspc.onrender.com/books/${id}`, {
       method: 'DELETE'
     })
       .then(data => {

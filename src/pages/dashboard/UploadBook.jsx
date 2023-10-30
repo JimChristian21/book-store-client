@@ -57,7 +57,7 @@ const UploadBook = () => {
         
         console.log(bookObject);
 
-        fetch('http://localhost:3000/books', {
+        fetch('https://book-store-server-rspc.onrender.com/books', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

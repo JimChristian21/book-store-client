@@ -59,7 +59,7 @@ const handleUpdate = (e) => {
         bookPDFURL
     }
 
-    fetch(`http://localhost:3000/books/${id}`,{
+    fetch(`https://book-store-server-rspc.onrender.com/books/${id}`,{
       method: 'PATCH',
       headers: {
         "Content-Type": "application/json"

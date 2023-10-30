@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             {
                 path: '/books/:id',
                 element: <SingleBook />,
-                loader: ({params}) => fetch(`http://localhost:3000/books/${params.id}`)
+                loader: ({params}) => fetch(`https://book-store-server-rspc.onrender.com/books/${params.id}`)
             }
         ]
     },
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
             {
                 path: '/admin/dashboard/edit-books/:id',
                 element: <EditBooks />,
-                loader: ({params}) => fetch(`http://localhost:3000/books/${params.id}`)
+                loader: ({params}) => fetch(`https://book-store-server-rspc.onrender.com/books/${params.id}`)
             },
         ]
     },
